@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "northeurope"
+            "value": "westeurope"
         },
         "environment": {
             "value": "dev"
@@ -15,7 +15,7 @@
             "value": {}
         },
         "purviewRootCollectionAdminObjectIds": {
-            "value": []
+            "value": ["bb3aa170-e8dd-4028-8ea4-bf5df5ce4d28"]
         },
         "vnetAddressPrefix": {
             "value": "10.0.0.0/16"
@@ -27,7 +27,7 @@
             "value": "10.0.1.0/24"
         },
         "enableDnsAndFirewallDeployment": {
-            "value": true
+            "value": false
         },
         "firewallPrivateIp": {
             "value": "10.0.0.4"
