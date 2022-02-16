@@ -335,5 +335,5 @@ resource firewall 'Microsoft.Network/azureFirewalls@2020-11-01' = if(enableDnsAn
 
 // Outputs
 output vnetId string = vnet.id
-output serviceSubnet string = vnet.properties.subnets[1].id
+output serviceSubnet string = length(vnet.properties.subnets) > 1 ? vnet.properties.subnets[1].id : ''
 output firewallPrivateIp string = enableDnsAndFirewallDeployment ? firewall.properties.ipConfigurations[0].properties.privateIPAddress : firewallPrivateIp
