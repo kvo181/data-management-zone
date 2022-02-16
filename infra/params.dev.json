@@ -38,7 +38,7 @@
             ]
         },
         "firewallTier": {
-            "value": "Premium"
+            "value": "Standard"
         },
         "firewallPolicyId": {
             "value": ""
